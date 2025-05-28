@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prepared Texts</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #1e1e1e;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #333;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      color: #9f79ff;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .text-row {
+      background: #2e263b;
+      padding: 15px 20px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .text {
+      flex: 1;
+      margin-right: 15px;
+      font-size: 15px;
+    }
+
+    .subtext {
+      font-size: 13px;
+      color: #aaa;
+      margin-top: 5px;
+      font-style: italic;
+    }
+
+    button.copy-btn {
+      background-color: #b86fff;
+      color: white;
+      border: none;
+      padding: 7px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+
+    button.copy-btn:hover {
+      background-color: #cc99ff;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>сделано jackson (чатом gpt)</h1>
+
+  <div class="text-row">
+    <div class="text">
+      yo wassup bro
+      <div class="subtext">(йоу привет бро)</div>
+    </div>
+    <button class="copy-btn" onclick="copyText(`yo wassup bro`)">Copy</button>
+  </div>
+
+  <div class="text-row">
+    <div class="text">
+      hru
+      <div class="subtext">(как дела)</div>
+    </div>
+    <button class="copy-btn" onclick="copyText(`hru`)">Copy</button>
+  </div>
+
+  <div class="text-row">
+    <div class="text">
+      are you practicing or just playing?
+      <div class="subtext">(ты тренируешься или просто играешь?)</div>
+    </div>
+    <button class="copy-btn" onclick="copyText(`are you practicing or just playing?`)">Copy</button>
+  </div>
+
+  <div class="text-row">
+    <div class="text">
+      bro u got a very familiar nickname havent i seen you around?
+      <div class="subtext">(Бро, у тебя очень знакомый ник, мы нигде не виделись?)</div>
+    </div>
+    <button class="copy-btn" onclick="copyText(`bro u got a very familiar nickname havent i seen you around?`)">Copy</button>
+  </div>
+
+  <div class="text-row">
+    <div class="text">
+      bro i just looked up my match history and u and i played on the *карта* map, and my nickname was *ник*
+      <div class="subtext">(бро я сейчас посмотрел свою историю матчей, и мы с тобой играли на карте *карта* мой ник был *ник*)</div>
+    </div>
+    <button class="copy-btn" onclick="copyText(`bro i just looked up my match history and u and i played on the *карта* map, and my nickname was *ник*`)">Copy</button>
+  </div>
+
+  <div class="text-row">
+    <div class="text">
+      bro u were really good back then
+      <div class="subtext">(бро ты был очень хорош тогда)</div>
+    </div>
+    <button class="copy-btn" onclick="copyText(`bro u were really good back then`)">Copy</button>
+  </div>
+
+  <div class="text-row">
+    <div class="text">
+      bro, do u want to play together?
+      <div class="subtext">(бро, не хочешь вместе поиграть?)</div>
+    </div>
+    <button class="copy-btn" onclick="copyText(`bro, do u want to play together?`)">Copy</button>
+  </div>
+
+  <div class="text-row">
+    <div class="text">
+      bro, do u want to play with my friends, we were going to play and one persons lights went out, do u want to come with us?
+      <div class="subtext">(бро не хочешь поиграть с моими друзьями, мы собрались играть а у одного человека выключили свет, не хочешь пойти с нами?)</div>
+    </div>
+    <button class="copy-btn" onclick="copyText(`bro, do u want to play with my friends, we were going to play and one persons lights went out, do u want to come with us?`)">Copy</button>
+  </div>
+
+  <div class="text-row">
+    <div class="text">
+      сan u add me as a friend? i can't get your profile to load((
+      <div class="subtext">(ты можешь добавить меня в друзья? у меня не загружается твой профиль(((( )</div>
+    </div>
+    <button class="copy-btn" onclick="copyText(`сan u add me as a friend? i can't get your profile to load((`)">Copy</button>
+  </div>
+
+</div>
+
+<script>
+  function copyText(text) {
+    navigator.clipboard.writeText(text).then(() => {
+      alert('Copied: ' + text);
+    });
+  }
+</script>
+
+</body>
+</html>
