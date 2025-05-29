@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Prepared Texts</title>
+  <title>Jackson</title>
   <style>
     body {
       background-color: #121212;
@@ -106,7 +106,7 @@
   <div class="text-row">
     <div class="text">
       bro i just looked up my match history and u and i played on the *карта* map, and my nickname was *ник*
-      <div class="subtext">бро я сейчас посмотрел свою историю матчей, и мы с тобой играли на карте *карта* мой ник был *ник*)</div>
+      <div class="subtext">бро я сейчас посмотрел свою историю матчей, и мы с тобой играли на карте *карта* мой ник был *ник*</div>
     </div>
     <button class="copy-btn" onclick="copyText(`bro i just looked up my match history and u and i played on the *карта* map, and my nickname was *ник*`)">Copy</button>
   </div>
@@ -137,7 +137,7 @@
 
   <div class="text-row">
     <div class="text">
-      сan u add me as a friend? i can't get your profile to load((
+      сan u add me as a friend? i can't get your profile to load((  
       <div class="subtext">ты можешь добавить меня в друзья? у меня не загружается твой профиль((((</div>
     </div>
     <button class="copy-btn" onclick="copyText(`сan u add me as a friend? i can't get your profile to load((`)">Copy</button>
@@ -147,9 +147,7 @@
 
 <script>
   function copyText(text) {
-    navigator.clipboard.writeText(text).then(() => {
-      alert('Copied: ' + text);
-    });
+    navigator.clipboard.writeText(text);
   }
 </script>
 
